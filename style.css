@@ -52,11 +52,28 @@ section{
     padding: 40px;
     text-align: justify;
 }
+#about, #contacts{
+    display: none;
+}
+#about:target{
+
+}
 @media all and (min-width: 961px) and (max-width: 1366px){
     nav{
         flex: 0 0 50px;
     }
     nav ol li{
-
+        display: none;
+    }
+}
+@media all and (min-width: 200px) and (max-width: 960px){
+    body{
+        flex-direction: column;
+    }
+    nav{
+        flex: 0 0 100px;
+    }
+    nav ol li{
+        display: none;
     }
 }
