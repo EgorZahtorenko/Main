@@ -14,6 +14,7 @@ nav{
 }
 nav ol{
     list-style: none;
+    margin-top: 50px;
 }
 nav ol li{
     font-size: 35px;
@@ -22,4 +23,40 @@ nav ol li{
 nav a{
     text-decoration: none;
     color: white;
+}
+a[href="#main"]::before{
+    content: "\2661";
+    margin: 10px;
+    color: red;
+}
+a[href="#about"]::before{
+    content: "\2667";
+    margin: 10px;
+}
+a[href="#contacts"]::before{
+    content: "\2662";
+    margin: 10px;
+    color: red;
+}
+a[target="_blank"]::before{
+    content: "\2664";
+    margin: 10px;
+}
+a[target="_blank"]::after{
+    content: "\21B5";
+    margin: 10px;
+    color: red;
+}
+section{
+    text-indent: 80px;
+    padding: 40px;
+    text-align: justify;
+}
+@media all and (min-width: 961px) and (max-width: 1366px){
+    nav{
+        flex: 0 0 50px;
+    }
+    nav ol li{
+
+    }
 }
