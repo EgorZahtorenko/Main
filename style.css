@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+}
+h1{
+    font-size: 60px;
+}
+nav{
+    background-color: black;
+    flex: 0 0 500px;
+}
+nav ol{
+    list-style: none;
+}
+nav ol li{
+    font-size: 35px;
+    padding: 18px;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
