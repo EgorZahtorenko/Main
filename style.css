@@ -48,15 +48,12 @@ a[target="_blank"]::after{
     color: red;
 }
 section{
-    text-indent: 80px;
+    text-indent: 100px;
     padding: 40px;
     text-align: justify;
 }
 #about, #contacts{
     display: none;
-}
-#about:target{
-
 }
 @media all and (min-width: 961px) and (max-width: 1366px){
     nav{
