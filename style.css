@@ -52,14 +52,32 @@ section{
     padding: 40px;
     text-align: justify;
 }
-#about, #contacts{
+#about, #contacts, #main{
     display: none;
+}
+#main:target{
+    display: block;
+    margin-top: -95px;
+}
+#about:target{
+    display: block;
+    margin-top: -95px;
+}
+#contacts:target{
+    display: block;
+    margin-top: -95px;
 }
 @media all and (min-width: 961px) and (max-width: 1366px){
     nav{
-        flex: 0 0 50px;
+        flex: 0 0 20px;
     }
-    nav ol li{
+    #textMain, #textAbout, #textContacts, #textFacebook{
+        display: none;
+    }
+    nav ol{
+        padding: 0;
+    }
+    a[target="_blank"]::after{
         display: none;
     }
 }
@@ -68,9 +86,20 @@ section{
         flex-direction: column;
     }
     nav{
-        flex: 0 0 100px;
+        flex: 0 0 20px;
     }
+    nav ol{
+         margin: 0;
+         padding: 0;
+         display: inline-block;
+     }
     nav ol li{
+        display: inline-block;
+    }
+    #textMain, #textAbout, #textContacts, #textFacebook{
+        display: none;
+    }
+    a[target="_blank"]::after{
         display: none;
     }
 }
