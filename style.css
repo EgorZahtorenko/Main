@@ -52,20 +52,17 @@ section{
     padding: 40px;
     text-align: justify;
 }
-#about, #contacts, #main{
+#about, #contacts{
     display: none;
 }
 #main:target{
     display: block;
-    margin-top: -95px;
 }
 #about:target{
     display: block;
-    margin-top: -95px;
 }
 #contacts:target{
     display: block;
-    margin-top: -95px;
 }
 @media all and (min-width: 801px) and (max-width: 1366px){
     nav{
